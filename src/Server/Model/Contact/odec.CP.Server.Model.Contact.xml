@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>odec.CP.Server.Model.Contact</name>
+    </assembly>
+    <members>
+        <member name="T:odec.Server.Model.Contact.Contact">
+            <summary>
+            серверный объект - контакт
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Contact.AddressDenormolized">
+            <summary>
+            строка адреса - денормализованная
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Contact.PhoneNumberDenormolized">
+            <summary>
+            строка телефон - денормализованная
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.ContactAddress">
+            <summary>
+            серверный объект - связь контакта и адреса 
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.ContactPhone">
+            <summary>
+            серверный объект - связь контакта и телефона
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Generic.UnifiedKey.ContactAddressGeneric`3">
+            <summary>
+            Обобщенный класс связи адреса и контакта
+            </summary>
+            <typeparam name="TKey">Тип идентификатора</typeparam>
+            <typeparam name="TContact">Тип контакта</typeparam>
+            <typeparam name="TAddress">Тип адреса</typeparam>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactAddressGeneric`3.AddressId">
+            <summary>
+            Идентификатор адреса
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactAddressGeneric`3.Address">
+            <summary>
+            Адрес
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactAddressGeneric`3.ContactId">
+            <summary>
+            Идентификатор контакта
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactAddressGeneric`3.Contact">
+            <summary>
+            Контакт
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2">
+            <summary>
+            Обобщенный класс - контакт
+            </summary>
+            <typeparam name="TKey">Тип Идентификатора</typeparam>
+            <typeparam name="TSex">Тип пола</typeparam>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.FirstName">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.Patronymic">
+            <summary>
+            Отчество
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.LastName">
+            <summary>
+            Фамилия
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.Email">
+            <summary>
+            Почта
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.SexId">
+            <summary>
+            Идентификтаор пола
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.Sex">
+            <summary>
+            Пол
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.BirthdayDate">
+            <summary>
+            День рождения
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactGeneric`2.SendNews">
+            <summary>
+            Признак новосной рассылки
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Generic.UnifiedKey.ContactPhoneGeneric`3">
+            <summary>
+            Обобщенная связь контакта и телефона
+            </summary>
+            <typeparam name="TKey">Тип идентификатора</typeparam>
+            <typeparam name="TContact">Тип контакта</typeparam>
+            <typeparam name="TPhone">Тип телефона</typeparam>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactPhoneGeneric`3.PhoneId">
+            <summary>
+            Идентификатор телефона
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactPhoneGeneric`3.Phone">
+            <summary>
+            Телефон
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactPhoneGeneric`3.ContactId">
+            <summary>
+            Идентификатор контакта
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.ContactPhoneGeneric`3.Contact">
+            <summary>
+            Контакт
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Generic.UnifiedKey.PhoneGeneric`2">
+            <summary>
+            Обобщенный класс - телефон
+            </summary>
+            <typeparam name="TKey">Тип идентификтора</typeparam>
+            <typeparam name="TPhoneType">ТИп типа телефона</typeparam>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.PhoneGeneric`2.Name">
+            <summary>
+            Номер телефона
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.PhoneGeneric`2.PhoneTypeId">
+            <summary>
+            Идентификтаор типа телефона
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.PhoneGeneric`2.PhoneType">
+            <summary>
+            Тип телефона
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Generic.UnifiedKey.SexGeneric`1">
+            <summary>
+            Обощенный класс - пол
+            </summary>
+            <typeparam name="TKey">Тип идентификатора</typeparam>
+        </member>
+        <member name="P:odec.Server.Model.Contact.Generic.UnifiedKey.SexGeneric`1.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Phone">
+            <summary>
+             серверный объект - телефон
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.PhoneType">
+            <summary>
+            серверный объект - тип телефона
+            </summary>
+        </member>
+        <member name="P:odec.Server.Model.Contact.PhoneType.Name">
+            <summary>
+            наименование ( домашний, рабочий и проч.)
+            </summary>
+        </member>
+        <member name="T:odec.Server.Model.Contact.Sex">
+            <summary>
+            серверный объект - пол
+            </summary>
+        </member>
+    </members>
+</doc>

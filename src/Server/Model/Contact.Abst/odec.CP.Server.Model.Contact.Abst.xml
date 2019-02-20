@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>odec.CP.Server.Model.Contact.Abst</name>
+    </assembly>
+    <members>
+        <member name="T:odec.CP.Server.Model.Contact.Abst.Interfaces.IContactAddress`1">
+            <summary>
+            Прокси объект контекста контактных адресов
+            </summary>
+            <typeparam name="TContactAddress">тип контактных адресов</typeparam>
+        </member>
+        <member name="P:odec.CP.Server.Model.Contact.Abst.Interfaces.IContactAddress`1.ContactAddresses">
+            <summary>
+            таблица связи контактных адресов
+            </summary>
+        </member>
+    </members>
+</doc>

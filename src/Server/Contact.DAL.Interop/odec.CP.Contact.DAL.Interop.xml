@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>odec.CP.Contact.DAL.Interop</name>
+    </assembly>
+    <members>
+        <member name="T:odec.Contact.DAL.Interop.IPhoneRepository`6">
+            <summary>
+            Interface to represent repository to operate with Phone
+            </summary>
+            <typeparam name="TPhoneId">Phone Key type</typeparam>
+            <typeparam name="TPhone">Phone type</typeparam>
+            <typeparam name="TUser">User type</typeparam>
+            <typeparam name="TUserId">User key type</typeparam>
+            <typeparam name="TPhoneType">Phone type type</typeparam>
+            <typeparam name="TContact">Contact type</typeparam>
+        </member>
+        <member name="M:odec.Contact.DAL.Interop.IPhoneRepository`6.GetUserPhones(`1)">
+            <summary>
+            Gets User Phones 
+            </summary>
+            <param name="user">user object</param>
+            <returns><see cref="T:System.Collections.Generic.IList`1"></see> of phones</returns>
+        </member>
+        <member name="M:odec.Contact.DAL.Interop.IPhoneRepository`6.GetUserPhones(`2)">
+            <summary>
+            Gets User Phones  by Id
+            </summary>
+            <param name="userId">user identity</param>
+            <returns><see cref="T:System.Collections.Generic.IList`1"></see> of phones</returns>
+        </member>
+        <member name="M:odec.Contact.DAL.Interop.IPhoneRepository`6.GetPhoneType(`3)">
+            <summary>
+            Gets Phone Type
+            </summary>
+            <param name="phone">phone object</param>
+            <returns> return Phone type of the the Phone Types</returns>
+        </member>
+        <member name="M:odec.Contact.DAL.Interop.IPhoneRepository`6.GetPhoneType(`0)">
+            <summary>
+            Gets Phone Type by phone Id
+            </summary>
+            <param name="phoneId">phone identity</param>
+            <returns> return Phone type of the Phone Types</returns>
+        </member>
+        <member name="M:odec.Contact.DAL.Interop.IPhoneRepository`6.GetContactsWithThatPhone(`3)">
+            <summary>
+            Get Contacts which has the phone specified.
+            </summary>
+            <param name="phone">phone object</param>
+            <returns> returns list of the contacts</returns>
+        </member>
+        <member name="M:odec.Contact.DAL.Interop.IPhoneRepository`6.GetContactsWithThatPhone(`0)">
+            <summary>
+            Get Contacts which has the phone specified by phone Id
+            </summary>
+            <param name="phoneId">phone identity</param>
+            <returns> returns list of the contacts</returns>
+        </member>
+    </members>
+</doc>

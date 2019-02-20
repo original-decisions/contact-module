@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Interfaces for contact data access layer</Description>
+    <Copyright>Original Decisions</Copyright>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <Authors>Mary Pirogova &lt;mashijob@yandex.ru&gt;;Alex Pirogov &lt;pirjob@yandex.ru&gt;</Authors>
+    <TargetFrameworks>netcoreapp1.0;net452;netcoreapp2.1;</TargetFrameworks>
+    <AssemblyName>odec.CP.Contact.DAL.Interop</AssemblyName>
+    <PackageId>odec.CP.Contact.DAL.Interop</PackageId>
+    <PackageTags>Interop;Contact;DAL;odec;Original Decisions</PackageTags>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">$(PackageTargetFallback);dotnet5.6</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp1.0|AnyCPU'">
+    <DocumentationFile>C:\Users\pirmo\Projects\tfs_New\Original Decisions Solutions\OriginalDecisions.CP\Server\odec.CP.Contact.DAL.Interop\odec.CP.Contact.DAL.Interop.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="odec.CP.Entity.DAL.Interop" Version="*"></PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
