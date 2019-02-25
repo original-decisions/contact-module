@@ -40,6 +40,6 @@ steps:
   displayName: 'Add Tag(s) on Succeeded build'
   inputs:
     tags: |
-     Memberhip
+     Contact
      Core
      Succeeded
